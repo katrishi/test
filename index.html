@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <header>
+        <div class="nav" id="nav">
+            <a href="#" id="menu" class="icon">&#9776;</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="from_name" placeholder="Ваше имя" id="from_name"
+                           onblur="validateName()">
+                    <small></small>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" placeholder="Тема письма" id="subject"
+                           onblur="validateSubject()">
+                    <small></small>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="from_email" placeholder="somebody@example.com"
+                           id="from_email" onblur="validateEmail()">
+                    <small></small>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" cols="30" rows="10" name="message"
+                              placeholder="Ваше сообщение" id="message" onblur="validateMessage()"></textarea>
+                    <small></small>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="submit" class="form-button">Отправить сообщение</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</div>
+
+
+<script src="js/main.js"></script>
+<script src="js/validateForm.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    /*background: url("../img/bg-img2.jpg") no-repeat top / contain fixed;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 100%;
+}
+
+/* Header */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #F7F7F7;
+
+}
+
+.nav-link {
+    margin-right: 20px;
+    color: #000;
+    border-bottom: 2px solid #F7F7F7;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #000;
+}
+
+.icon {
+    display: none;
+}
+
+
+/* Main */
+
+/* Section Contact */
+
+section {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 40%;
+    margin: 60px 0 60px;
+    padding: 60px 30px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    font-size: inherit;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+textarea::-webkit-input-placeholder{
+    font-size: 1.1rem;
+}
+
+.form-group:last-child {
+    text-align: center;
+}
+
+.form-button {
+    padding: 10px;
+    background: #007bff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form-button:hover {
+    background: #0062cc;
+    transition: all ease 0.5s;
+}
+
+/* Invalid */
+
+.form-group.error input, .form-group.error textarea {
+    border: 2px solid #dc3545;
+}
+
+.error small {
+    margin-left: 10px;
+    color: #dc3545;
+}
+
+/* Valid */
+
+.form-group.success input, .form-group.success textarea{
+    border: 2px solid #28a745;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    .contact-form {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .container {
+        width: 100%;
+    }
+
+    .nav {
+        justify-content: center;
+        width: 200px;
+        background: none;
+
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        color: #000;
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+
+    .nav.responsive {
+        flex-direction: column;
+        justify-content: flex-start;
+        /*position: fixed;*/
+        background: #F7F7F7;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        padding: 0;
+    }
+
+    .nav.responsive .nav-link {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+        padding: 20px 30px 10px;
+    }
+
+    .nav.responsive .nav-link:hover {
+        background: #E8E8E8;
+    }
+
+    .nav.responsive .icon {
+        padding: 20px;
+        align-self: center;
+
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

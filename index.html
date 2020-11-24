@@ -16,13 +16,37 @@
     <header>
         <div class="nav" id="nav">
             <a href="#" id="menu" class="icon">&#9776;</a>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="#task" class="nav-link">Задание</a>
+            <a href="#contact" class="nav-link">Контакт</a>
         </div>
     </header>
 
+    <div class="bg-img"></div>
+
     <main>
-        <section id="contact">
+        <div id="task"></div>
+        <section class="task">
+            <div class="task-img">
+                <div class="task-text">
+                    <h2>Lorem ipsum dolor.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae consectetur cum dolores doloribus ea error eveniet, exercitationem explicabo fuga hic impedit in incidunt magnam magni maiores non quaerat reprehenderit repudiandae sed sequi ullam voluptatibus. Distinctio eos, provident! Consectetur enim expedita itaque magni nostrum numquam qui quidem? Eum tempore, tenetur.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="img/sea1.jpg" alt="img1">
+                </div>
+            </div>
+            <div class="task-action">
+                <button class="insert">Добавить</button>
+                <button class="edit">Изменить</button>
+                <button class="del">Удалить</button>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
             <div class="contact-form">
                 <div class="form-group">
                     <input type="text" class="form-control" name="from_name" placeholder="Ваше имя" id="from_name"
@@ -53,9 +77,10 @@
     </main>
 </div>
 
-
 <script src="js/main.js"></script>
 <script src="js/validateForm.js"></script>
+<script src="js/task.js"></script>
+
 
 
 

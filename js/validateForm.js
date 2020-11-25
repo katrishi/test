@@ -69,20 +69,16 @@ function isEmpty (input) {
 }
 
 function setSuccsess (input) {
-  var element = input.parentElement;
+  let element = input.parentElement;
   input.nextElementSibling.innerHTML = '';
   element.classList.add('success');
 }
 
 function setError (input, message) {
-  var element = input.parentElement;
+  let element = input.parentElement;
   input.nextElementSibling.innerHTML = message;
   element.classList.add('error');
 }
-
-
-
-
 
 
 

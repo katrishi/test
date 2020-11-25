@@ -67,7 +67,16 @@ header {
 .bg-img {
     width: 100%;
     height: 100vh;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
     background: url("../img/bg-img2.jpg") no-repeat top / cover fixed;
+}
+
+.bg-img p {
+    margin-top: 20px;
 }
 
 /* Main */
@@ -81,29 +90,24 @@ header {
 .task {
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
+    padding: 20px
 }
 
 .task-img {
-    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    flex: 2;
+    flex-wrap: wrap;
 }
 
-.img {
-    flex: 1;
-}
-
-.img img {
-    object-fit: cover;
-    width: 80%;
-
+.task-img img {
+    width: 10%;
+    /*object-fit: cover;*/
+    margin-right: 10px;
 }
 
 .task-text {
-    flex: 2;
     padding: 10px;
 }
 
@@ -113,20 +117,19 @@ header {
 }
 
 .task-text p {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     padding: 10px;
     text-align: justify;
     text-indent: 20px;
 }
 
-
 .task-action {
+    width: 50%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-around;
     padding: 20px;
-
 }
 
 .task-action button {
@@ -166,10 +169,6 @@ header {
     background: #BE0606;
     transition: all ease 0.5s
 }
-
-/*.task-hidden {*/
-/*    !*position: absolute;*!*/
-/*}*/
 
 /* Section Contact */
 
@@ -242,17 +241,39 @@ textarea::-webkit-input-placeholder {
 }
 
 @media screen and (max-width: 1280px) {
+
+    #task {
+        height: 50px;
+    }
+
+    .task {
+        height: auto;
+    }
+
+    .task-img {
+        display: block;
+        height: auto;
+        width: 50%;
+    }
+
+    .task-img img {
+        width: 100%;
+        object-fit: cover;
+        padding-top: 20px;
+    }
+
     .contact-form {
         width: 100%;
+        height: auto;
     }
 
 }
 
 @media screen and (max-width: 768px) {
 
-
     .container {
         width: 100%;
+        font-size: 1.1rem;
     }
 
     .nav {
@@ -296,17 +317,44 @@ textarea::-webkit-input-placeholder {
     .nav.responsive .icon {
         padding: 20px;
         align-self: center;
-
     }
 
     .bg-img {
         display: none;
     }
 
-    .contact-form {
+    #task {
+        height: 20px;
+    }
+
+    .task {
+        height: auto;
+    }
+
+    .task-img {
+        display: block;
+        height: auto;
+        width: 90%;
+    }
+
+    .task-img img {
+        width: 100%;
+        object-fit: cover;
+        padding-top: 20px;
+    }
+
+    .task-text p {
         width: 100%;
     }
 
+    .contact {
+        display: block;
+        height: auto;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
 
 }
 

@@ -27,22 +27,32 @@
     <main>
         <div id="task"></div>
         <section class="task">
+            <div class="task-text">
+                <h2>Lorem ipsum dolor.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet autem esse eum iste
+                    voluptate! Adipisci beatae cum cupiditate deserunt ducimus error nihil perferendis quis, tempora
+                    tenetur! Consectetur dignissimos ipsum necessitatibus saepe voluptatum. Dolore eaque, quis. Aliquam
+                    asperiores cumque dicta eum fuga laudantium magnam, minus perspiciatis quaerat rem sit vel?
+                </p>
+            </div>
             <div class="task-img">
-                <div class="task-text">
-                    <h2>Lorem ipsum dolor.</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae consectetur cum dolores doloribus ea error eveniet, exercitationem explicabo fuga hic impedit in incidunt magnam magni maiores non quaerat reprehenderit repudiandae sed sequi ullam voluptatibus. Distinctio eos, provident! Consectetur enim expedita itaque magni nostrum numquam qui quidem? Eum tempore, tenetur.
-                    </p>
-                </div>
-                <div class="img">
-                    <img src="img/sea1.jpg" alt="img1">
-                </div>
+                <img src="img/sea1.jpg" alt="img1">
             </div>
             <div class="task-action">
-                <button class="insert">Добавить</button>
+                <button class="insert" value="Добавить">Добавить</button>
                 <button class="edit">Изменить</button>
                 <button class="del">Удалить</button>
             </div>
+            <div class="select">
+<!--                <p>-->
+<!--                    фото <input type="checkbox" value="img" name="select[]">-->
+<!--                </p>-->
+                <p>
+                   текст <input type="checkbox" value="text" id="selectText">
+                </p>
+            </div>
+
 
         </section>
 
@@ -80,8 +90,6 @@
 <script src="js/main.js"></script>
 <script src="js/validateForm.js"></script>
 <script src="js/task.js"></script>
-
-
 
 
 </body>

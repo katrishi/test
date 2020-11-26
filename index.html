@@ -27,33 +27,41 @@
     <main>
         <div id="task"></div>
         <section class="task">
-            <div class="task-text">
-                <h2>Lorem ipsum dolor.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet autem esse eum iste
-                    voluptate! Adipisci beatae cum cupiditate deserunt ducimus error nihil perferendis quis, tempora
-                    tenetur! Consectetur dignissimos ipsum necessitatibus saepe voluptatum. Dolore eaque, quis. Aliquam
-                    asperiores cumque dicta eum fuga laudantium magnam, minus perspiciatis quaerat rem sit vel?
-                </p>
-            </div>
-            <div class="task-img">
-                <img src="img/sea1.jpg" alt="img1">
-            </div>
-            <div class="task-action">
-                <button class="insert" value="Добавить">Добавить</button>
-                <button class="edit">Изменить</button>
-                <button class="del">Удалить</button>
+            <div class="sectionUpdate">
+                <div class="task-text">
+                    <h2>Lorem ipsum dolor.</h2>
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aperiam atque deserunt doloremque dolorum eius est fuga fugit illo illum ipsam itaque labore, laboriosam necessitatibus nihil nostrum, numquam obcaecati perferendis perspiciatis porro possimus quasi quidem quisquam recusandae reiciendis, repudiandae sit temporibus tenetur totam velit veniam veritatis voluptas voluptate voluptatem?
+                   </p>
+                    <p>Diam vel quam elementum pulvinar etiam non quam lacus. Natoque penatibus et magnis dis parturient montes nascetur. Id velit ut tortor pretium viverra suspendisse potenti. Rutrum tellus pellentesque eu tincidunt. Arcu bibendum at varius vel pharetra vel turpis nunc. Convallis aenean et tortor at. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Quam id leo in vitae turpis massa sed. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl.</p>
+                </div>
+                <div class="task-img">
+                    <img src="img/sea1.jpg" alt="img1">
+                </div>
             </div>
             <div class="select">
-<!--                <p>-->
-<!--                    фото <input type="checkbox" value="img" name="select[]">-->
-<!--                </p>-->
-                <p>
-                   текст <input type="checkbox" value="text" id="selectText">
-                </p>
+                <div class="select-text">
+                    <p>
+                        <label for="selectText">Текст</label>
+                         <input type="checkbox" value="text" id="selectText">
+                    </p>
+                </div>
+                <div class="select-img">
+                    <p>
+                        <label for="selectImg">Картинка</label>
+                         <input type="checkbox" value="img" id="selectImg">
+                    </p>
+                    <div class="addImg">
+                        <img src="img/sea3.jpg" alt="img3">
+                        <img src="img/sea4.jpg" alt="img4">
+                        <img src="img/sea5.jpg" alt="img5">
+                    </div>
+                </div>
             </div>
-
-
+            <div class="task-action">
+                <button class="insert">Добавить</button>
+                <button class="del">Удалить</button>
+            </div>
         </section>
 
         <section class="contact" id="contact">

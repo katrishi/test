@@ -12,12 +12,6 @@ menu.addEventListener('click', function (e) {
 
 });
 
-// let bgImg = document.getElementsByClassName('bg-img')[0];
-//
-// fetch('https://jsonplaceholder.typicode.com/users/7')
-//   .then(response => response.json())
-//   .then(json => console.log(json['username']));
-
 let xhr = new XMLHttpRequest();
 let user;
 let url = 'https://jsonplaceholder.typicode.com/users/3/';
